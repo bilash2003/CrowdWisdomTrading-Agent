@@ -1,8 +1,17 @@
 from fastapi import FastAPI
+from app.utils.logger import logger
 
-app = FastAPI()
+app = FastAPI(
+    title="CrowdWisdom Trading Agent",
+    version="1.0.0"
+)
 
 
 @app.get("/")
-def home():
-    return {"message": "CrowdWisdomTrading Agent Running"}
+def root():
+    logger.info("Root endpoint called")
+
+    return {
+        "status": "running",
+        "project": "CrowdWisdomTrading Crypto Agent"
+    }
