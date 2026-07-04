@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 from app.utils.logger import logger
+from app.agents.market_agent import MarketAgent
+
+market_agent = MarketAgent()
 
 app = FastAPI(
     title="CrowdWisdom Trading Agent",
@@ -15,3 +18,9 @@ def root():
         "status": "running",
         "project": "CrowdWisdomTrading Crypto Agent"
     }
+    
+
+@app.get("/market/{asset}")
+def get_market(asset: str):
+
+    return market_agent.execute(asset)
