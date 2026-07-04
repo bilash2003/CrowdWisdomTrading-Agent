@@ -1,5 +1,6 @@
 from app.services.market_service import MarketService
 from app.utils.logger import logger
+from app.services.polymarket_service import PolymarketService
 
 
 class MarketAgent:

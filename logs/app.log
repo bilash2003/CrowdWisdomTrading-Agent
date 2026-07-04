@@ -7,3 +7,12 @@
 2026-07-05 00:49:52.326 | INFO     | app.main:root:27 - Root endpoint called
 2026-07-05 00:55:05.784 | INFO     | app.main:root:27 - Root endpoint called
 2026-07-05 01:10:36.952 | INFO     | app.main:root:27 - Root endpoint called
+2026-07-05 01:39:42.449 | INFO     | app.main:root:30 - Root endpoint called
+2026-07-05 01:48:22.712 | INFO     | app.main:root:30 - Root endpoint called
+2026-07-05 01:48:28.159 | INFO     | app.agents.market_agent:execute:13 - Searching markets for BTC
+2026-07-05 01:48:28.839 | INFO     | app.agents.market_agent:execute:17 - Market search completed
+2026-07-05 01:51:59.464 | INFO     | app.main:root:30 - Root endpoint called
+2026-07-05 01:52:12.230 | INFO     | app.agents.market_agent:execute:13 - Searching markets for BTC
+2026-07-05 01:52:12.888 | INFO     | app.agents.market_agent:execute:17 - Market search completed
+2026-07-05 01:52:52.302 | INFO     | app.agents.market_agent:execute:13 - Searching markets for ETH
+2026-07-05 01:52:53.028 | INFO     | app.agents.market_agent:execute:17 - Market search completed

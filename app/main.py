@@ -4,6 +4,9 @@ from app.agents.market_agent import MarketAgent
 
 from app.agents.llm_agent import LLMAgent
 
+from app.agents.data_agent import DataAgent
+data_agent = DataAgent()
+
 llm_agent = LLMAgent()
 
 
@@ -36,3 +39,7 @@ def root():
 def get_market(asset: str):
 
     return market_agent.execute(asset)
+
+@app.get("/apify")
+def apify_status():
+    return data_agent.health()
