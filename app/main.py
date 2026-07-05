@@ -4,14 +4,15 @@ from app.agents.market_agent import MarketAgent
 
 from app.agents.llm_agent import LLMAgent
 from app.agents.price_agent import PriceAgent
+from app.agents.prediction_agent import PredictionAgent
+
 
 from app.agents.data_agent import DataAgent
-data_agent = DataAgent()
-
 llm_agent = LLMAgent()
-
-price_agent = PriceAgent()
 market_agent = MarketAgent()
+price_agent = PriceAgent()
+prediction_agent = PredictionAgent()
+data_agent = DataAgent()
 
 app = FastAPI(
     title="CrowdWisdom Trading Agent",
@@ -48,3 +49,8 @@ def apify_status():
 @app.get("/price/{asset}")
 def price(asset: str):
     return price_agent.execute(asset)
+
+@app.get("/predict/{asset}")
+def predict(asset: str):
+
+    return prediction_agent.execute(asset)
