@@ -93,6 +93,7 @@ Endpoint	Description
     "recommended_position_percent": 12
   }
 }
+
 🛠 Technologies Used
 Backend
 FastAPI
@@ -108,6 +109,7 @@ Kronos Time-Series Model
 Infrastructure
 Python 3.11+
 Virtual Environment (venv)
+
 🔁 System Workflow
 1. User calls API (/predict/BTC)
 2. Fetch OHLCV market data
@@ -116,6 +118,7 @@ Virtual Environment (venv)
 5. Calculate confidence score
 6. Apply risk engine (Kelly Criterion)
 7. Return final trading signal
+   
 📊 Benefits of This Project
 💰 Trading Intelligence
 Combines AI + crowd wisdom
@@ -127,24 +130,4 @@ Each component is independent (agents)
 📉 Risk-controlled output
 Prevents over-trading
 Capital protection focused
-📂 Project Structure
-CrowdWisdomTrading-Agent/
-│
-├── app/
-│   ├── agents/
-│   ├── services/
-│   ├── utils/
-│   └── main.py
-│
-├── Kronos/               # AI model module
-├── data/
-├── logs/
-├── texts/
-├── venv/
-└── README.md
-🚀 Future Improvements
-Add live trading execution (Binance orders)
-Add reinforcement learning agent
-Improve risk model (VaR / CVaR)
-Add dashboard UI (React / Streamlit)
-Deploy on cloud (AWS / Render / Railway)
+ 
