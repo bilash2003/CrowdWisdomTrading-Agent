@@ -1,6 +1,9 @@
 📊 CrowdWisdom Trading Agent
+
 🚀 Introduction
+
 CrowdWisdom Trading Agent is an AI-powered crypto trading intelligence system that combines:
+
 📈 Real-time market data (Binance via CCXT)
 🧠 Machine Learning forecasting (Kronos Time-Series Model)
 📊 Market sentiment (Polymarket / external prediction markets)
@@ -8,6 +11,7 @@ CrowdWisdom Trading Agent is an AI-powered crypto trading intelligence system th
 🤖 LLM-based reasoning layer (optional Q&A assistant)
 
 The system analyzes assets like BTC/USDT and produces:
+
 Direction (UP / DOWN)
 Confidence score
 Predicted price movement
@@ -15,14 +19,17 @@ Risk-adjusted position sizing
 🎯 Why This Project?
 
 Traditional trading systems rely only on:
+
 Technical indicators ❌
 Human intuition ❌
 Static rules ❌
 
 This project introduces:
+
 ✔ Crowd + AI Hybrid Intelligence
 
 Combines:
+
 Market data (truth)
 Prediction markets (crowd wisdom)
 AI forecasting models
@@ -34,6 +41,7 @@ No manual analysis needed.
 Not just prediction → but how much to invest safely
 
 💡 Key Features
+
 Real-time OHLCV data fetching (Binance)
 Time-series forecasting using Kronos model
 Market sentiment integration (Polymarket)
@@ -54,6 +62,7 @@ FastAPI backend for real-time API access
 </p>
               
 ⚙️ System Pipeline
+
 1️⃣ Data Layer
 Fetches live crypto OHLCV data
 Source: Binance via CCXT
@@ -95,22 +104,25 @@ Endpoint	Description
 }
 
 🛠 Technologies Used
-Backend
-FastAPI
-Uvicorn
-Data Engineering
-Pandas
-NumPy
-CCXT (Binance API)
-AI / ML
-PyTorch
-HuggingFace Transformers
-Kronos Time-Series Model
-Infrastructure
-Python 3.11+
-Virtual Environment (venv)
+
+1.	Backend
+2.	FastAPI
+3.	Uvicorn
+4.	Data Engineering
+5.	Pandas
+6.	NumPy
+7.	CCXT (Binance API)
+8.	AI / ML
+9.	PyTorch
+10.	HuggingFace Transformers
+11.	Kronos Time-Series Model
+12.	Infrastructure
+13.	Python 3.11+
+14.	Virtual Environment (venv)
+
 
 🔁 System Workflow
+
 1. User calls API (/predict/BTC)
 2. Fetch OHLCV market data
 3. Fetch sentiment (Polymarket)
@@ -120,6 +132,7 @@ Virtual Environment (venv)
 7. Return final trading signal
    
 📊 Benefits of This Project
+
 💰 Trading Intelligence
 Combines AI + crowd wisdom
 More robust than single indicator systems
