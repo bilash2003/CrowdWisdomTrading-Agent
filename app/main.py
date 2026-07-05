@@ -3,13 +3,14 @@ from app.utils.logger import logger
 from app.agents.market_agent import MarketAgent
 
 from app.agents.llm_agent import LLMAgent
+from app.agents.price_agent import PriceAgent
 
 from app.agents.data_agent import DataAgent
 data_agent = DataAgent()
 
 llm_agent = LLMAgent()
 
-
+price_agent = PriceAgent()
 market_agent = MarketAgent()
 
 app = FastAPI(
@@ -43,3 +44,7 @@ def get_market(asset: str):
 @app.get("/apify")
 def apify_status():
     return data_agent.health()
+
+@app.get("/price/{asset}")
+def price(asset: str):
+    return price_agent.execute(asset)

@@ -16,3 +16,4 @@
 2026-07-05 01:52:12.888 | INFO     | app.agents.market_agent:execute:17 - Market search completed
 2026-07-05 01:52:52.302 | INFO     | app.agents.market_agent:execute:13 - Searching markets for ETH
 2026-07-05 01:52:53.028 | INFO     | app.agents.market_agent:execute:17 - Market search completed
+2026-07-05 14:31:52.567 | INFO     | app.main:root:31 - Root endpoint called
